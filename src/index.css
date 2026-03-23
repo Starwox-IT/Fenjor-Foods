@@ -9,9 +9,9 @@ html *::after {
 @import "tailwindcss";
 
 @theme {
-  --font-primary: "Nunito", sans-serif;
-  --font-poppins: "poppins", sans-serif;
-  /* --bg-hero-pattern: url('/src/assets/auth-image.png'); */
+  --font-primary: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --bg-hero-pattern: url('/src/assets/Heropage.png');
   --color-primary: #579A62;
   --color-primary-light: #E6F2E8;
   --color-secondary: #F5CCB3;
