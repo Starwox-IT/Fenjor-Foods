@@ -4,7 +4,7 @@ import AboutHeroMobileImg from "../../../assets/AboutHeroMobile.png";
 
 const AboutHero = () => {
     return (
-        <section className="relative w-full min-h-[40vh] md:min-h-[45vh] lg:min-h-[50vh] flex flex-col justify-center overflow-hidden">
+        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e]">
 
             {/* Desktop Background */}
             <div
@@ -19,12 +19,12 @@ const AboutHero = () => {
             ></div>
 
             {/* Content Container */}
-            <div className="relative z-10 w-full max-w-7xl px-6 sm:px-8 lg:px-12 xl:px-16 pt-16 pb-12">
-                <div className="max-w-2xl text-center sm:text-left sm:mx-0 flex flex-col items-center sm:items-start">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-poppins text-white mb-3 sm:mb-6 leading-tight">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 flex justify-center md:justify-start md:pb-10">
+                <div className="flex flex-col items-center text-center md:items-start md:text-start gap-2 max-w-2xl sm:mx-0">
+                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-poppins text-white mb-1 sm:mb-2 leading-tight">
                         Our Story
                     </h1>
-                    <p className="text-sm text-center sm:text-left sm:text-base sm:max-w-[500px] max-w-[300px] font-primary text-gray-100 font-medium">
+                    <p className=" text-center md:text-left sm:text-base sm:max-w-[500px] max-w-[400px] font-primary text-gray-200">
                         Empowering food entrepreneurs through accessible, certified kitchen
                         space
                     </p>

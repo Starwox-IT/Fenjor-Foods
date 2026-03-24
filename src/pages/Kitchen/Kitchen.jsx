@@ -59,39 +59,32 @@ const Kitchen = () => {
   return (
     <div>
       <div className=" mx-auto">
-        {/* Mobile hero */}
-        <div
-          className="md:hidden flex items-center justify-center px-4 text-white"
-          style={{
-            backgroundImage: `url(${kitHeroMob})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "444px",
-          }}
-        >
-          <div className="w-full flex justify-center items-center">
-            <div className="w-full max-w-[353px] flex flex-col items-center text-center gap-2">
-              <h1 className="font-semibold text-3xl font-poppins">The Kitchen</h1>
-              <p className="text-sm font-primary">A fully certified, professional space for your culinary vision</p>
-            </div>
-          </div>
-        </div>
+        {/* Hero Section */}
+        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e]">
+            {/* Desktop Background */}
+            <div
+                className="hidden md:block absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${kitHero})` }}
+            ></div>
 
-        {/* Desktop hero */}
-        <div
-          className="hidden md:flex items-end px-4 lg:px-8 text-white"
-          style={{
-            backgroundImage: `url(${kitHero})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "444px",
-          }}
-        >
-          <div className="text-start max-w-6xl mx-auto w-full flex flex-col items-start gap-3 pb-10">
-            <h1 className="font-semibold text-3xl sm:text-4xl lg:text-[40px] font-poppins">The Kitchen</h1>
-            <p className="text-sm sm:text-base font-primary">A fully certified, professional space for your culinary vision</p>
-          </div>
-        </div>
+            {/* Mobile Background */}
+            <div
+                className="block md:hidden absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${kitHeroMob})` }}
+            ></div>
+
+            {/* Content Container */}
+            <div className="relative z-10 max-w-6xl mx-auto w-full px-4 lg:px-8 flex justify-center md:justify-start md:pb-10 text-white">
+                <div className="flex flex-col items-center text-center md:items-start md:text-start gap-2 max-w-2xl sm:mx-0">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-poppins leading-tight mb-1 sm:mb-2 text-white">
+                        The Kitchen
+                    </h1>
+                    <p className="text-sm sm:text-base font-primary text-gray-200">
+                        A fully certified, professional space for your culinary vision
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <div className="bg-secondary-light">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row py-16 gap-10 px-4 md:px-0">

@@ -29,7 +29,7 @@ const RecipeHome = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                     {/* Quote text — bottom left */}
-                    <div className="absolute bottom-0 left-0 px-6 pb-8 sm:px-8 sm:pb-10 max-w-2xl">
+                    <div className="absolute bottom-0 left-0 right-0 sm:right-auto px-6 pb-8 sm:px-8 sm:pb-10 max-w-2xl text-center sm:text-left mx-auto sm:mx-0">
                         <p className="text-white font-bold italic font-poppins text-xl sm:text-2xl lg:text-3xl leading-snug">
                             Your recipes. Our kitchen. Together, we&apos;re building
                             something meaningful.

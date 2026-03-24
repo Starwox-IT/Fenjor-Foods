@@ -57,6 +57,8 @@ const TimelineItem = ({ data, index }) => {
 
             {/* --- Left Column (Desktop Only for Left Elements) --- */}
             <div className="hidden md:flex w-1/2 justify-end pr-8 xl:pr-12">
+
+
                 {isLeftDesktop && <JourneyCard data={data} isLeftDesktop={true} />}
             </div>
 

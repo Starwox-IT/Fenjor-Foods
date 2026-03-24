@@ -131,7 +131,7 @@ const HomeReview = () => {
                                         key={i}
                                         className={`flex-none pl-4 w-full sm:w-[47%] lg:w-1/4`}
                                     >
-                                        <div className={`h-full min-h-[320px] rounded-2xl p-6 flex flex-col justify-between transition-colors duration-300 ${isActive ? "bg-[#F5CCB3]" : "bg-white"}`}>
+                                        <div className={`h-full min-h-[320px] rounded-2xl p-6 flex flex-col justify-between transition-colors duration-300 ${isActive ? "bg-white sm:bg-[#F5CCB3]" : "bg-white"}`}>
                                             <div>
                                                 <QuoteIcon active={isActive} />
                                                 <p

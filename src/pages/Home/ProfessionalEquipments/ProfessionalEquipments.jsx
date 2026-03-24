@@ -47,7 +47,7 @@ const ProfessionalEquipments = () => {
                     </div>
 
                     <NavLink
-                        to="/the-kitchen"
+                        to="/gallery"
                         className="hidden sm:flex items-center gap-1.5 text-sm font-semibold font-primary text-gray-900 underline underline-offset-4 hover:text-primary transition-colors duration-200 self-start sm:self-auto whitespace-nowrap"
                     >
                         Browse All Equipments

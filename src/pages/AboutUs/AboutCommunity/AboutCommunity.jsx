@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import AboutCommunityImg from '../../../assets/AboutCommunity.png';
 import AboutCommunityMobileImg from '../../../assets/AboutCommunity.pngMobile.png';
 
 const AboutCommunity = () => {
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e]">
 
             {/* Desktop Background Image */}
             <div
@@ -31,12 +32,18 @@ const AboutCommunity = () => {
 
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                        <button className="bg-[#4A8C5C] hover:bg-[#3d7a4e] text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto">
+                        <NavLink
+                            to="/pricing-booking"
+                            className="bg-[#4A8C5C] hover:bg-[#3d7a4e] text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-center"
+                        >
                             Book the Kitchen
-                        </button>
-                        <button className="bg-white/10 hover:bg-white/20 border border-white text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto">
+                        </NavLink>
+                        <NavLink
+                            to="/contact"
+                            className="bg-white/10 hover:bg-white/20 border border-white text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-center"
+                        >
                             Contact Us
-                        </button>
+                        </NavLink>
                     </div>
 
                 </div>

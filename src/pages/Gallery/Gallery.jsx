@@ -103,26 +103,25 @@ const Gallery = () => {
     <div>
       <div className="w-full h-full bg-[#F5F5F5]">
         {/* gallery hero */}
-        <div
-          className="flex items-center justify-center px-6 text-white"
+        <section
+          className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e] text-white px-6"
           style={{
             backgroundImage: `url(${galleryHero})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "444px",
           }}
         >
-          <div className="w-full max-w-6xl mx-auto flex justify-center md:justify-start">
-            <div className="flex flex-col items-center text-center md:items-start md:text-start gap-3">
-              <h1 className="font-semibold text-3xl lg:text-[40px] font-poppins">
+          <div className="relative z-10 w-full max-w-6xl mx-auto flex justify-center md:justify-start md:pb-10">
+            <div className="flex flex-col items-center text-center md:items-start md:text-start gap-2 max-w-2xl">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-poppins leading-tight mb-1 sm:mb-2 text-white">
                 Kitchen Gallery
               </h1>
-              <p className="text-sm sm:text-base font-primary">
+              <p className="text-sm sm:text-base font-primary text-gray-200">
                 Explore our professional kitchen space through photos and video
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* gallery content */}
         <div className="w-full flex justify-center bg-[#FDF5EF]">

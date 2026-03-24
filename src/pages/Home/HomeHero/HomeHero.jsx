@@ -44,7 +44,7 @@ const features = [
 const HomeHero = () => {
   return (
     <section
-      className="relative w-full min-h-[75vh] flex flex-col justify-between bg-cover bg-center"
+      className="relative w-full min-h-[75vh] flex flex-col justify-between bg-cover bg-center bg-[#2d4a3a]"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
       {/* ── Hero Content ── */}
