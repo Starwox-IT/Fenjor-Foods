@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <header className="sticky top-0 z-50 bg-white shadow-sm">
-            <div className="max-w-6xl mx-auto px-4 lg:px-0">
+            <div className="max-w-6xl mx-auto px-4 lg:px-8">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
                     <NavLink to="/" className="flex-shrink-0">
@@ -34,10 +34,10 @@ const Header = () => {
                                 key={link.to}
                                 to={link.to}
                                 className={({ isActive }) =>
-                                    `text-sm font-medium font-[var(--font-primary)] transition-colors duration-200 
+                                    `text-sm font-medium font-primary transition-colors duration-200 
                   ${isActive
-                                        ? "text-[var(--color-primary)] underline underline-offset-4"
-                                        : "text-gray-700 hover:text-[var(--color-primary)]"
+                                        ? "text-primary underline underline-offset-4"
+                                        : "text-gray-700 hover:text-primary"
                                     }`
                                 }
                             >
@@ -50,7 +50,7 @@ const Header = () => {
                     <div className="hidden md:block">
                         <NavLink
                             to="/pricing-booking"
-                            className="inline-block bg-[var(--color-primary)] hover:bg-[#4a8754] text-white text-sm font-semibold font-[var(--font-primary)] px-5 py-2.5 rounded-lg transition-colors duration-200"
+                            className="inline-block bg-primary hover:bg-[#4a8754] text-white text-sm font-semibold font-primary px-5 py-2.5 rounded-lg transition-colors duration-200"
                         >
                             Book The Kitchen
                         </NavLink>
@@ -118,8 +118,8 @@ const Header = () => {
                             to={link.to}
                             onClick={() => setMenuOpen(false)}
                             className={({ isActive }) =>
-                                `text-lg font-medium font-[var(--font-primary)] border-b border-gray-100 pb-4
-                ${isActive ? "text-[var(--color-primary)]" : "text-gray-800"}`
+                                `text-lg font-medium font-primary border-b border-gray-100 pb-4
+                ${isActive ? "text-primary" : "text-gray-800"}`
                             }
                         >
                             {link.label}
@@ -132,7 +132,7 @@ const Header = () => {
                     <NavLink
                         to="/pricing-booking"
                         onClick={() => setMenuOpen(false)}
-                        className="block w-full bg-[var(--color-primary)] hover:bg-[#4a8754] text-white text-base font-semibold font-[var(--font-primary)] text-center py-3.5 rounded-lg transition-colors duration-200"
+                        className="block w-full bg-primary hover:bg-[#4a8754] text-white text-base font-semibold font-primary text-center py-3.5 rounded-lg transition-colors duration-200"
                     >
                         Book the Kitchen
                     </NavLink>

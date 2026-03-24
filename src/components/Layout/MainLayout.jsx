@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div className="min-h-screen flex flex-col font-[var(--font-primary)]">
+        <div className="min-h-screen flex flex-col font-(--font-primary)">
             <Header />
             <main className="flex-1">
                 <Outlet />
