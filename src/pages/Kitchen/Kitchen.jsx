@@ -60,7 +60,7 @@ const Kitchen = () => {
     <div>
       <div className=" mx-auto">
         {/* Hero Section */}
-        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e]">
+        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-[#2d4a3a]">
             {/* Desktop Background */}
             <div
                 className="hidden md:block absolute inset-0 bg-cover bg-center"

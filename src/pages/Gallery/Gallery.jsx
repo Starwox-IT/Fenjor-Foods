@@ -104,7 +104,7 @@ const Gallery = () => {
       <div className="w-full h-full bg-[#F5F5F5]">
         {/* gallery hero */}
         <section
-          className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e] text-white px-6"
+          className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-[#2d4a3a] text-white px-6"
           style={{
             backgroundImage: `url(${galleryHero})`,
             backgroundSize: "cover",

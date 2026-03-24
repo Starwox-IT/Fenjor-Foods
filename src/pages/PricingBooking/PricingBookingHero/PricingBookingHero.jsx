@@ -4,7 +4,7 @@ import HeroBgMobile from '../../../assets/PriceBookHeroMobile.png';
 
 const PricingBookingHero = () => {
     return (
-        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-gradient-to-b from-[#2d3d30] to-[#1a2b1e]">
+        <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-[#2d4a3a]">
 
             {/* Desktop Background */}
             <div

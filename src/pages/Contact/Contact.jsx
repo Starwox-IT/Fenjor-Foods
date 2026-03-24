@@ -41,7 +41,7 @@ const Contact = () => {
     <div>
       <div className="w-full ">
         <div
-          className="flex items-center justify-center md:items-end px-4 lg:px-8 text-white"
+          className="relative flex items-center justify-center md:items-end px-4 lg:px-8 text-white bg-[#2d4a3a]"
           style={{
             backgroundImage: `url(${contactHero})`,
             backgroundSize: "cover",
