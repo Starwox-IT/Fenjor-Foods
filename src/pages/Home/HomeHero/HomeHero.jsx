@@ -47,13 +47,11 @@ const HomeHero = () => {
       className="relative w-full min-h-[75vh] flex flex-col justify-between bg-cover bg-center"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-
       {/* ── Hero Content ── */}
       <div className="relative z-10 flex-1 flex flex-col justify-center items-center sm:items-start text-center sm:text-left max-w-6xl mx-auto w-full px-4 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-10">
         {/* Headline */}
         <h1 className="text-white font-bold font-poppins text-4xl sm:text-5xl lg:text-6xl leading-tight max-w-3xl">
-          Your Culinary Dreams,{" "}
-          <br className="hidden sm:block" />
+          Your Culinary Dreams, <br className="hidden sm:block" />
           Our Certified Kitchen
         </h1>
 
@@ -111,7 +109,11 @@ const HomeHero = () => {
               />
 
               {/* Main icon */}
-              <img src={card.icon} alt={card.title} className="h-10 w-10 object-contain" />
+              <img
+                src={card.icon}
+                alt={card.title}
+                className="h-10 w-10 object-contain"
+              />
 
               {/* Text */}
               <div>
