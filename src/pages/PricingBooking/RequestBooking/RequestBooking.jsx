@@ -4,7 +4,7 @@ import { InputField, SelectField, TextareaField } from '../../../components/UI/F
 import RequestBookingImg from '../../../assets/RequestBooking.png';
 import RequestBookingMobileImg from '../../../assets/RequestBookingMobile.png';
 
-const RequestBooking = () => {
+const RequestBooking = ({ heading = "Request Booking" }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
@@ -38,7 +38,7 @@ const RequestBooking = () => {
                     {/* Left: Form */}
                     <div className="w-full order-2 lg:order-1">
                         <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold font-poppins text-gray-900 mb-8 sm:mb-10 lg:mt-2">
-                            Request Booking
+                            {heading}
                         </h2>
 
                         {isSuccess && (

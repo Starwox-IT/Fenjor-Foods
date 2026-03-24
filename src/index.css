@@ -1,12 +1,10 @@
-html *,
-html *::before,
-html *::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-@import "tailwindcss";
 
 @theme {
   --font-primary: "Inter", sans-serif;
