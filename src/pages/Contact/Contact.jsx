@@ -132,7 +132,7 @@ const Contact = () => {
                 </p>
                 {/* CTA — hidden on mobile, shown on sm+ */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/flenjorfoods/"
                   target="_blank"
                   rel="noreferrer"
                   className="hidden sm:flex items-center gap-2 bg-[#579A62] text-white font-semibold font-primary px-7 py-3 rounded-xl hover:opacity-90 transition-opacity"
@@ -148,7 +148,7 @@ const Contact = () => {
               {[igThumb1, igThumb2, igThumb3, igThumb4].map((src, i) => (
                 <a
                   key={i}
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/flenjorfoods/"
                   target="_blank"
                   rel="noreferrer"
                   className="group relative w-full sm:flex-1 h-64 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
@@ -167,7 +167,7 @@ const Contact = () => {
 
             {/* CTA — shown only on mobile, below images */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/flenjorfoods/"
               target="_blank"
               rel="noreferrer"
               className="sm:hidden w-full flex items-center justify-center gap-2 bg-[#579A62] text-white font-semibold font-primary px-7 py-3 rounded-xl hover:opacity-90 transition-opacity"
