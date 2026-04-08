@@ -21,7 +21,7 @@ const cards = [
     desc: "hello@flenjorfoods.com",
     lines: ["We respond within 24 hours"],
   },
-  {
+  { 
     icon: <MapPin className="w-5 h-5" />,
     title: "Address",
     desc: "3 stores across Halifax & Dartmouth",

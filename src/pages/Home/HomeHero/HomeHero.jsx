@@ -85,7 +85,8 @@ const HomeHero = () => {
           </NavLink>
 
           <NavLink
-            to="/the-kitchen"
+            to="https://www.flenjorfoods.com/s1/home"
+            target="_blank"
             className="w-full sm:w-auto text-center border border-white text-white hover:bg-white/10 text-sm font-semibold font-primary px-5 py-3 rounded-lg transition-colors duration-200"
           >
             Visit Flenjor Store
