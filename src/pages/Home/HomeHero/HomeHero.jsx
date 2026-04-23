@@ -47,22 +47,23 @@ const HomeHero = () => {
       className="relative w-full min-h-[75vh] flex flex-col justify-between bg-cover bg-center bg-[#2d4a3a]"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
+
       {/* ── Hero Content ── */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center items-center sm:items-start text-center sm:text-left max-w-6xl mx-auto w-full px-4 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-10">
+      <div className="relative z-10 flex-1 flex flex-col justify-center items-center sm:items-start text-center sm:text-left max-w-6xl mx-auto w-full px-4 lg:px-8 pt-16 pb-8 md:pb-10">
         {/* Headline */}
-        <h1 className="text-white font-bold font-poppins text-4xl sm:text-5xl lg:text-6xl leading-tight max-w-3xl">
+        <h1 className="hero-title text-white font-bold font-poppins text-4xl sm:text-5xl lg:text-6xl leading-tight max-w-3xl">
           Your Culinary Dreams, <br className="hidden sm:block" />
           Our Certified Kitchen
         </h1>
 
         {/* Sub-text */}
-        <p className="mt-4 text-gray-200 font-primary text-sm sm:text-base max-w-xl">
+        <p className="hero-subtitle mt-4 text-gray-200 font-primary text-sm sm:text-base max-w-xl">
           Hourly commercial kitchen rental for food entrepreneurs, bakers, and
           caterers
         </p>
 
         {/* CTA Buttons */}
-        <div className="mt-7 flex flex-col sm:flex-row w-full max-w-[280px] sm:max-w-none mx-auto sm:mx-0 justify-center sm:justify-start items-stretch sm:items-center gap-4">
+        <div className="hero-buttons mt-7 flex flex-col sm:flex-row w-full max-w-[280px] sm:max-w-none mx-auto sm:mx-0 justify-center sm:justify-start items-stretch sm:items-center gap-4">
           <NavLink
             to="/pricing-booking"
             className="flex w-full sm:w-auto justify-center items-center gap-2 bg-primary hover:bg-[#4a8754] text-white text-sm font-semibold font-primary px-5 py-3 rounded-lg transition-colors duration-200"
@@ -95,12 +96,12 @@ const HomeHero = () => {
       </div>
 
       {/* ── Feature Cards ── */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 pb-10">
+      <div className="feature-cards-container relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 pb-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((card) => (
             <div
               key={card.title}
-              className="relative bg-white/15 backdrop-blur-sm border border-white/20 rounded-xl p-5 pt-8 flex flex-col gap-3 overflow-visible"
+              className="feature-card relative bg-white/15 backdrop-blur-sm border border-white/20 rounded-xl p-5 pt-8 flex flex-col gap-3 overflow-visible"
             >
               {/* Badge — absolutely pinned to top-right, half hanging over the top edge */}
               <img

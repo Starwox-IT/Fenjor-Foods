@@ -168,7 +168,7 @@ const Kitchen = () => {
           </div>
         </div>
 
-        <div className="bg-primary-light">
+        <div className="bg-primary-light" id="bakery">
           <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 flex flex-col gap-8">
             {/* Header */}
             <div className="flex flex-col items-center md:items-start text-center md:text-start gap-6">
