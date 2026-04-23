@@ -10,10 +10,10 @@ export const InputField = React.forwardRef(({ label, subLabel, error, ...props }
         )}
         <input
             ref={ref}
-            className={`w-full bg-white border ${error ? 'border-red-500' : 'border-gray-200'} rounded-[0.5rem] py-3.5 px-4 text-sm font-primary text-gray-800 focus:outline-none focus:ring-1 focus:ring-[#DC5E32] focus:border-[#DC5E32] transition-colors placeholder:text-gray-400`}
+            className={`w-full bg-white border ${error?.message ? 'border-red-500' : 'border-gray-200'} rounded-[0.5rem] py-3.5 px-4 text-sm font-primary text-gray-800 focus:outline-none focus:ring-1 focus:ring-[#DC5E32] focus:border-[#DC5E32] transition-colors placeholder:text-gray-400`}
             {...props}
         />
-        {error && <span className="text-red-500 text-xs mt-1 font-primary">{error.message}</span>}
+        {error?.message && <span className="text-red-500 text-xs mt-1 font-primary">{error.message}</span>}
     </div>
 ));
 
@@ -27,7 +27,7 @@ export const SelectField = React.forwardRef(({ label, subLabel, options, error, 
         )}
         <select
             ref={ref}
-            className={`w-full bg-white border ${error ? 'border-red-500' : 'border-gray-200'} rounded-[0.5rem] py-3.5 px-4 text-sm font-primary text-gray-800 focus:outline-none focus:ring-1 focus:ring-[#DC5E32] focus:border-[#DC5E32] transition-colors appearance-none`}
+            className={`w-full bg-white border ${error?.message ? 'border-red-500' : 'border-gray-200'} rounded-[0.5rem] py-3.5 px-4 text-sm font-primary text-gray-800 focus:outline-none focus:ring-1 focus:ring-[#DC5E32] focus:border-[#DC5E32] transition-colors appearance-none`}
             {...props}
             style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path basePath='%236B7280' /%3E%3C/svg%3E")`,
@@ -41,7 +41,7 @@ export const SelectField = React.forwardRef(({ label, subLabel, options, error, 
                 <option key={idx} value={opt.value || opt}>{opt.label || opt}</option>
             ))}
         </select>
-        {error && <span className="text-red-500 text-xs mt-1 font-primary">{error.message}</span>}
+        {error?.message && <span className="text-red-500 text-xs mt-1 font-primary">{error.message}</span>}
     </div>
 ));
 

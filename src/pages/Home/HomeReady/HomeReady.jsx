@@ -17,9 +17,11 @@ const HomeReady = () => {
                         <p className="text-gray-700 font-primary text-sm sm:text-base leading-relaxed max-w-md mx-auto md:mx-0 mb-8">
                             Book your first session today and join our community of successful food entrepreneurs
                         </p>
-                        <button className="bg-white text-primary font-bold font-primary text-sm px-6 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-200">
-                            View Pricing & Book now
-                        </button>
+                        <a href="https://flenjor-foods.netlify.app/pricing-booking" target="_blank" rel="noopener noreferrer">
+                            <button className="bg-white cursor-pointer text-primary font-bold font-primary text-sm px-6 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-200">
+                                View Pricing & Book now
+                            </button>
+                        </a>
                     </div>
 
                     {/* Image */}

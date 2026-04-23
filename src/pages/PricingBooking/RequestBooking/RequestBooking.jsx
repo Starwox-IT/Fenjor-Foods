@@ -31,7 +31,7 @@ const RequestBooking = ({ heading = "Request Booking" }) => {
     };
 
     return (
-        <section className="bg-[#FCF6F0] py-16 sm:py-24">
+        <section className="bg-[#FCF6F0] py-16 sm:py-24" id="contact-form">
             <div className="max-w-6xl mx-auto px-4 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -50,7 +50,7 @@ const RequestBooking = ({ heading = "Request Booking" }) => {
                             </div>
                         )}
 
-                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 sm:space-y-6">
+                        <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5 sm:space-y-6">
 
                             {/* Name */}
                             <div>
@@ -75,45 +75,48 @@ const RequestBooking = ({ heading = "Request Booking" }) => {
                                     error={errors.email}
                                 />
                                 <InputField
-                                    label="Phone"
+                                    label="Phone*"
                                     type="tel"
                                     placeholder="(902) 555-0100"
-                                    {...register('phone')}
+                                    {...register('phone', { required: 'Phone number is required' })}
+                                    error={errors.phone}
                                 />
                             </div>
 
                             {/* Business Name */}
                             <div>
                                 <InputField
-                                    label="Business Name*"
+                                    label="Business Name"
                                     subLabel="(NGO companies gets a discount for booking)"
                                     placeholder="Your business or brand name"
-                                    {...register('businessName', { required: 'Business name is required' })}
-                                    error={errors.businessName}
+                                    {...register('businessName')}
                                 />
                             </div>
 
                             {/* Preferred Date & Package */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                                 <InputField
-                                    label="Preferred Date"
+                                    label="Preferred Date*"
                                     type="date"
-                                    {...register('preferredDate')}
+                                    {...register('preferredDate', { required: 'Preferred date is required' })}
+                                    error={errors.preferredDate}
                                 />
                                 <SelectField
-                                    label="Package"
+                                    label="Package*"
                                     options={packageOptions}
                                     placeholder="Select package"
-                                    {...register('package')}
+                                    {...register('package', { required: 'Please select a package' })}
+                                    error={errors.package}
                                 />
                             </div>
 
                             {/* Needs */}
                             <div>
                                 <TextareaField
-                                    label="Tell us about your needs"
+                                    label="Tell us about your needs*"
                                     placeholder="How can we help you?"
-                                    {...register('needs')}
+                                    {...register('needs', { required: 'Please describe your needs' })}
+                                    error={errors.needs}
                                 />
                             </div>
 
@@ -122,7 +125,7 @@ const RequestBooking = ({ heading = "Request Booking" }) => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`w-full bg-[#DC5E32] hover:bg-[#c24f28] text-white font-semibold font-primary text-sm py-3.5 rounded-lg transition-colors flex justify-center items-center ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
+                                    className={`w-full bg-[#DC5E32] cursor-pointer hover:bg-[#c24f28] text-white font-semibold font-primary text-sm py-3.5 rounded-lg transition-colors flex justify-center items-center ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
                                 >
                                     {isSubmitting ? (
                                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

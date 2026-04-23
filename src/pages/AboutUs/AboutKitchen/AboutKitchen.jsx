@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutKitchenImg from '../../../assets/AboutKitchen.png';
 import AboutKitchenMobileImg from '../../../assets/AboutKitchenMobile.png';
+import { NavLink } from 'react-router-dom';
 
 const AboutKitchen = () => {
     return (
@@ -53,9 +54,11 @@ const AboutKitchen = () => {
                             </div>
 
                             <div className="mt-8 lg:mt-10">
-                                <button className="bg-[#DC5E32] hover:bg-[#c24f28] text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors inline-block w-full sm:w-auto">
-                                    Get in Touch
-                                </button>
+                                <NavLink to="/contact/#contact-form">
+                                    <button className="bg-[#DC5E32] cursor-pointer hover:bg-[#c24f28] text-white font-semibold font-primary text-sm py-3.5 px-8 rounded-lg transition-colors inline-block w-full sm:w-auto">
+                                        Get in Touch
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

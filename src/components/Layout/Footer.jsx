@@ -160,14 +160,14 @@ const Footer = () => {
                             Connect with Us
                         </h4>
                         <div className="flex items-center gap-4 mb-3">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-700 hover:text-(--color-primary) transition-colors duration-200">
+                            <a href="https://www.instagram.com/flenjorfoods/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-700 hover:text-(--color-primary) transition-colors duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                                     <circle cx="12" cy="12" r="4" />
                                     <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
                                 </svg>
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-700 hover:text-(--color-primary) transition-colors duration-200">
+                            <a href="https://www.facebook.com/flenjorfoods/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-700 hover:text-(--color-primary) transition-colors duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z" />
                                 </svg>
