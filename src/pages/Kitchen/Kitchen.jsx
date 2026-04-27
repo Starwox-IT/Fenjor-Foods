@@ -21,6 +21,7 @@ import badgeOrange from "../../assets/badgeOrange.png";
 import long from "../../assets/long.png";
 import inner from "../../assets/inner.png";
 import inner2 from "../../assets/inner2.png";
+import bread2 from "../../assets/bread.jpg";
 
 const equipments = [
   {
@@ -61,34 +62,38 @@ const Kitchen = () => {
       <div className=" mx-auto">
         {/* Hero Section */}
         <section className="relative w-full h-[444px] flex items-center justify-center md:items-end overflow-hidden bg-[#2d4a3a]">
-            {/* Desktop Background */}
-            <div
-                className="hidden md:block absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${kitHero})` }}
-            ></div>
+          {/* Desktop Background */}
+          <div
+            className="hidden md:block absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${kitHero})` }}
+          ></div>
 
-            {/* Mobile Background */}
-            <div
-                className="block md:hidden absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${kitHeroMob})` }}
-            ></div>
+          {/* Mobile Background */}
+          <div
+            className="block md:hidden absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${kitHeroMob})` }}
+          ></div>
 
-            {/* Content Container */}
-            <div className="relative z-10 max-w-6xl mx-auto w-full px-4 lg:px-8 flex justify-center md:justify-start md:pb-10 text-white">
-                <div className="flex flex-col items-center text-center md:items-start md:text-start gap-2 max-w-2xl sm:mx-0">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-poppins leading-tight mb-1 sm:mb-2 text-white">
-                        The Kitchen
-                    </h1>
-                    <p className="text-sm sm:text-base font-primary text-gray-200">
-                        A fully certified, professional space for your culinary vision
-                    </p>
-                </div>
+          {/* Content Container */}
+          <div className="relative z-10 max-w-6xl mx-auto w-full px-4 lg:px-8 flex justify-center md:justify-start md:pb-10 text-white">
+            <div className="flex flex-col items-center text-center md:items-start md:text-start gap-2 max-w-2xl sm:mx-0">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-poppins leading-tight mb-1 sm:mb-2 text-white">
+                The Kitchen
+              </h1>
+              <p className="text-sm sm:text-base font-primary text-gray-200">
+                A fully certified, professional space for your culinary vision
+              </p>
             </div>
+          </div>
         </section>
 
         <div className="bg-secondary-light">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row py-16 gap-10 px-4 md:px-0">
-            <img src={rice} alt="Rice" className="w-full max-w-[353px] mx-auto md:hidden rounded-2xl object-cover" />
+            <img
+              src={rice}
+              alt="Rice"
+              className="w-full max-w-[353px] mx-auto md:hidden rounded-2xl object-cover"
+            />
             <div className="flex-1 flex flex-col items-center md:items-start">
               <div className="w-full max-w-[353px] md:max-w-none flex flex-col items-center md:items-start gap-6 text-center md:text-start">
                 <h1 className="font-poppins font-semibold text-2xl sm:text-3xl lg:text-4xl">
@@ -102,9 +107,10 @@ const Kitchen = () => {
                     everyone with a passion for food and a dream to share it.
                   </p>
                   <p>
-                    Whether you're a baker scaling your home operation, a caterer
-                    managing multiple events, or an entrepreneur launching a new
-                    food product, our space is designed to meet your needs.
+                    Whether you're a baker scaling your home operation, a
+                    caterer managing multiple events, or an entrepreneur
+                    launching a new food product, our space is designed to meet
+                    your needs.
                   </p>
                   <p>
                     We celebrate African culinary heritage while embracing all
@@ -113,7 +119,10 @@ const Kitchen = () => {
                     entrepreneurs thrive.
                   </p>
                 </div>
-                <Link to="/about" className="px-6 py-3 bg-[#E15B2E] text-white font-semibold font-primary rounded-lg">
+                <Link
+                  to="/about"
+                  className="px-6 py-3 bg-[#E15B2E] text-white font-semibold font-primary rounded-lg"
+                >
                   Learn More About Us
                 </Link>
               </div>
@@ -130,11 +139,17 @@ const Kitchen = () => {
               </h2>
               <div className="flex md:w-full items-center md:justify-between gap-2">
                 <p className="font-primary text-gray-500 text-sm sm:text-base">
-                  Everything you need for professional food production, all included in your rental.
+                  Everything you need for professional food production, all
+                  included in your rental.
                 </p>
-                <a href="" className="hidden sm:flex items-center text-[#2E4D34] font-semibold underline shrink-0">
+                <a
+                  href=""
+                  className="hidden sm:flex items-center text-[#2E4D34] font-semibold underline shrink-0"
+                >
                   Browse All Equipments
-                  <span className="pl-1"><ArrowRightIcon className="w-4" /></span>
+                  <span className="pl-1">
+                    <ArrowRightIcon className="w-4" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -145,9 +160,7 @@ const Kitchen = () => {
                   className="bg-secondary-light rounded-2xl p-4 md:p-6 shadow-sm flex flex-col items-start gap-4"
                 >
                   <div className="bg-secondary p-2 rounded w-16 h-16 flex items-center justify-center shrink-0">
-                    <span className="text-[#8C2A20] text-xl">
-                      {item.icon}
-                    </span>
+                    <span className="text-[#8C2A20] text-xl">{item.icon}</span>
                   </div>
                   <div className="gap-2 flex flex-col">
                     <h3 className="font-poppins font-semibold text-gray-800 text-[15px] md:text-[18px]">
@@ -171,19 +184,23 @@ const Kitchen = () => {
         <div className="bg-primary-light" id="bakery">
           <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 flex flex-col gap-8">
             {/* Header */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-6">
-              <span className="self-center md:self-start px-4 py-2 bg-primary text-white text-xs sm:text-sm font-semibold font-primary rounded-xl">
-                Featured Specialty
-              </span>
-              <h2 className="font-poppins font-semibold text-3xl sm:text-4xl lg:text-[40px] text-gray-800 leading-tight">
-                Professional Bakery Suite
-              </h2>
-              <p className="font-primary text-sm sm:text-base text-gray-600 max-w-2xl">
-                Transform your baking passion into a thriving business with our
-                state-of-the-art commercial bakery facilities. From artisan
-                breads to wedding cakes, we have everything you need to scale
-                your operations.
-              </p>
+
+            <div className="main-bake flex flex-col md:flex-row items-center gap-10 mb-10">
+              <div className="flex flex-col items-center md:items-start text-center md:text-start gap-6">
+                <span className="self-center md:self-start px-4 py-2 bg-primary text-white text-xs sm:text-sm font-semibold font-primary rounded-xl">
+                  Featured Specialty
+                </span>
+                <h2 className="font-poppins font-semibold text-3xl sm:text-4xl lg:text-[40px] text-gray-800 leading-tight">
+                  Professional Bakery Suite
+                </h2>
+                <p className="font-primary text-sm sm:text-base text-gray-600 max-w-2xl">
+                  Transform your baking passion into a thriving business with
+                  our state-of-the-art commercial bakery facilities. From
+                  artisan breads to wedding cakes, we have everything you need
+                  to scale your operations.
+                </p>
+              </div>
+              <img src={bread2} alt="Bakery bread" className="w-[70%] md:w-[30%] drop-shadow-[-15px_15px_15px_rgba(0,0,0,0.2)]"/>
             </div>
 
             {/* Image cards */}
@@ -334,21 +351,48 @@ const Kitchen = () => {
                 Certified & Compliant
               </h2>
               <p className="font-primary text-gray-500 text-sm sm:text-base">
-                Our kitchen meets all local and state requirements for commercial
-                food production
+                Our kitchen meets all local and state requirements for
+                commercial food production
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { img: health, badge: badgeGreen, title: "Health Department Approved", desc: "HD-2024-5678" },
-                { img: food, badge: badgeOrange, title: "Food Safety Certified", desc: "FSC-A1234" },
-                { img: fire, badge: badgeGreen, title: "Fire Safety Compliant", desc: "FS-COM-2024" },
-                { img: HACCP, badge: badgeOrange, title: "HACCP Certified", desc: "HACCP-12345" },
+                {
+                  img: health,
+                  badge: badgeGreen,
+                  title: "Health Department Approved",
+                  desc: "HD-2024-5678",
+                },
+                {
+                  img: food,
+                  badge: badgeOrange,
+                  title: "Food Safety Certified",
+                  desc: "FSC-A1234",
+                },
+                {
+                  img: fire,
+                  badge: badgeGreen,
+                  title: "Fire Safety Compliant",
+                  desc: "FS-COM-2024",
+                },
+                {
+                  img: HACCP,
+                  badge: badgeOrange,
+                  title: "HACCP Certified",
+                  desc: "HACCP-12345",
+                },
               ].map((item) => (
-                <div key={item.title} className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col">
+                <div
+                  key={item.title}
+                  className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col"
+                >
                   {/* Image + badge */}
                   <div className="relative">
-                    <img src={item.img} alt={item.title} className="w-full  object-cover" />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full  object-cover"
+                    />
                     <img
                       src={item.badge}
                       alt="badge"
@@ -357,8 +401,12 @@ const Kitchen = () => {
                   </div>
                   {/* Write-up */}
                   <div className="p-4 flex flex-col gap-2">
-                    <h4 className="font-poppins font-semibold text-[16px] text-gray-800">{item.title}</h4>
-                    <p className="font-primary text-[12px] text-gray-500">{item.desc}</p>
+                    <h4 className="font-poppins font-semibold text-[16px] text-gray-800">
+                      {item.title}
+                    </h4>
+                    <p className="font-primary text-[12px] text-gray-500">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -370,21 +418,43 @@ const Kitchen = () => {
           <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 flex flex-col gap-8">
             <div className="flex flex-col items-center text-center sm:flex-row sm:items-end sm:text-start sm:justify-between gap-4">
               <div className="flex flex-col gap-2">
-                <h2 className="font-poppins font-semibold text-2xl sm:text-3xl lg:text-4xl text-gray-800 leading-tight">See The Space</h2>
-                <p className="font-primary text-sm sm:text-base text-gray-500">Tour our kitchen through these photos</p>
+                <h2 className="font-poppins font-semibold text-2xl sm:text-3xl lg:text-4xl text-gray-800 leading-tight">
+                  See The Space
+                </h2>
+                <p className="font-primary text-sm sm:text-base text-gray-500">
+                  Tour our kitchen through these photos
+                </p>
               </div>
-              <a href="/gallery" className="flex items-center underline gap-1 text-[#579A62] font-semibold font-primary text-[15px] shrink-0">
+              <a
+                href="/gallery"
+                className="flex items-center underline gap-1 text-[#579A62] font-semibold font-primary text-[15px] shrink-0"
+              >
                 View Full Gallery
                 <ArrowRightIcon className="w-4" />
               </a>
             </div>
 
             {/* Image grid: long left, inner + inner2 stacked right */}
-            <div className="flex flex-col md:grid gap-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
-              <img src={long} alt="Kitchen interior" className="w-full h-64 md:h-full object-cover rounded-2xl" />
+            <div
+              className="flex flex-col md:grid gap-4"
+              style={{ gridTemplateColumns: "1fr 1fr" }}
+            >
+              <img
+                src={long}
+                alt="Kitchen interior"
+                className="w-full h-64 md:h-full object-cover rounded-2xl"
+              />
               <div className="flex flex-col gap-4">
-                <img src={inner} alt="Kitchen inner view" className="w-full h-64 object-cover rounded-2xl flex-1" />
-                <img src={inner2} alt="Kitchen inner view 2" className="w-full h-64 object-cover rounded-2xl flex-1" />
+                <img
+                  src={inner}
+                  alt="Kitchen inner view"
+                  className="w-full h-64 object-cover rounded-2xl flex-1"
+                />
+                <img
+                  src={inner2}
+                  alt="Kitchen inner view 2"
+                  className="w-full h-64 object-cover rounded-2xl flex-1"
+                />
               </div>
             </div>
           </div>
@@ -392,7 +462,6 @@ const Kitchen = () => {
 
         <div style={{ backgroundColor: "#f5e5d0" }}>
           <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 flex flex-col md:flex-row items-center justify-between gap-12">
-
             {/* Left — headline + CTA */}
             <div className="flex flex-col items-center text-center md:items-start md:text-start gap-6 flex-1">
               <h2
@@ -402,12 +471,21 @@ const Kitchen = () => {
                 Ready to book the kitchen?
               </h2>
               <p className="font-primary text-sm sm:text-base text-gray-600 max-w-sm">
-                See our flexible pricing options and reserve your time slot today
+                See our flexible pricing options and reserve your time slot
+                today
               </p>
               {/* Mobile images — stacked, shown only on mobile */}
               <div className="flex flex-col gap-4 w-full md:hidden">
-                <img src={inner} alt="Kitchen view 1" className="w-full h-52 object-cover rounded-2xl" />
-                <img src={inner2} alt="Kitchen view 2" className="w-full h-52 object-cover rounded-2xl" />
+                <img
+                  src={inner}
+                  alt="Kitchen view 1"
+                  className="w-full h-52 object-cover rounded-2xl"
+                />
+                <img
+                  src={inner2}
+                  alt="Kitchen view 2"
+                  className="w-full h-52 object-cover rounded-2xl"
+                />
               </div>
               <Link
                 to="/pricing-booking"
@@ -433,7 +511,6 @@ const Kitchen = () => {
                 style={{ bottom: 0, left: "5%" }}
               />
             </div>
-
           </div>
         </div>
       </div>
